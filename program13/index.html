@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Baju Budi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Produk</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="container">
+    <h1>Selamat Datang di Toko Baju Budi</h1>
+    <p>Temukan koleksi baju terbaik untuk gaya Anda.</p>
+  </section>
+
+  <hr class="divider" />
+
+  <section id="products" class="container">
+    <h1 align="center">Koleksi Baju Budi</h1>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" id="slide-1">
+          <img
+            src="img/baju1.jpg"
+            alt="Baju A"
+            class="package-image"
+            onclick="openModal('img/baju1.jpg', 'Baju A')"
+          />
+          <h2>Baju blink 2004</h2>
+          <p>
+            Bahan katun<br />Warna: hitam<br />Ukuran: S, M, L<br /><br /><b
+              >Rp150.000</b
+            >
+          </p>
+          <a href="pesan.html?produk=Baju A&harga=150000" class="button"
+            >Pesan</a
+          >
+        </div>
+        <div class="slide" id="slide-2">
+          <img
+            src="img/baju2.jpg"
+            alt="Baju B"
+            class="package-image"
+            onclick="openModal('img/baju2.jpg', 'Baju B')"
+          />
+          <h2>Baju blink 2009</h2>
+          <p>
+            Bahan cottoncombed<br />Warna: hitam<br />Ukuran: S, M, L, XL<br /><br /><b
+              >Rp250.000</b
+            >
+          </p>
+          <a href="pesan.html?produk=Baju B&harga=250000" class="button"
+            >Pesan</a
+          >
+        </div>
+        <div class="slide" id="slide-3">
+          <img
+            src="img/baju3.jpg"
+            alt="Baju C"
+            class="package-image"
+            onclick="openModal('img/baju3.jpg', 'Baju C')"
+          />
+          <h2>Baju blink 2023</h2>
+          <p>
+            Bahan chiffon<br />Warna: Hitam<br />Ukuran: S, M<br /><br /><b
+              >Rp180.000</b
+            >
+          </p>
+          <a href="pesan.html?produk=Baju C&harga=180000" class="button"
+            >Pesan</a
+          >
+        </div>
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section id="contact" class="container">
+    <h2>Hubungi Kami</h2>
+    <p>
+      Silakan hubungi kami untuk informasi lebih lanjut tentang koleksi kami.
+    </p>
+    <p>Email: budi@gmail.com</p>
+    <p>Phone: 0888-3333-4444</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Budi Toko Baju. All rights reserved.</p>
+  </footer>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage" />
+  <div id="caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
